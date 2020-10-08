@@ -9,6 +9,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.example.helloworld.Pertemuan2.ListActivity;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -21,6 +23,11 @@ public class MainActivity extends AppCompatActivity {
         Button myBtn = (Button)findViewById(R.id.button1);
         final EditText myEditText =  (EditText)findViewById(R.id.editText1);
         Button btnHelp = (Button)findViewById(R.id.btnHelp);
+
+        //Pertemuan2
+        Button btnList = (Button) findViewById(R.id.buttonListView);
+        Button btnRecycler = (Button) findViewById(R.id.buttonRecylerView);
+        Button btnCard = (Button) findViewById(R.id.buttonCardView);
 
         //Action
         txtView.setText(R.string.text_hello_world);
@@ -44,6 +51,16 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
+        btnList.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, ListActivity.class
+                );
+                startActivity(intent);
+            }
+        });
+
 
     }
     public void Tracker(View view){
