@@ -10,6 +10,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import com.example.helloworld.Pertemuan2.ListActivity;
+import com.example.helloworld.Pertemuan2.RecyclerActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -48,15 +49,25 @@ public class MainActivity extends AppCompatActivity {
                 b.putString("help_string",myEditText.getText().toString());
                 intent.putExtras(b);
                 startActivity(intent);
-
             }
         });
+
+
+
 
         btnList.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, ListActivity.class
                 );
+                startActivity(intent);
+            }
+        });
+
+        btnRecycler.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, RecyclerActivity.class);
                 startActivity(intent);
             }
         });
