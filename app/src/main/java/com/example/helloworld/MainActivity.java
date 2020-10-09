@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.example.helloworld.Pertemuan2.CardActvity;
 import com.example.helloworld.Pertemuan2.ListActivity;
 import com.example.helloworld.Pertemuan2.RecyclerActivity;
 
@@ -50,7 +51,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
+        btnCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, CardActvity.class
+                );
+                startActivity(intent);
+            }
+        });
 
 
 
