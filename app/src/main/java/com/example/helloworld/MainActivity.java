@@ -11,6 +11,7 @@ import android.widget.TextView;
 import com.example.helloworld.Pertemuan2.CardActvity;
 import com.example.helloworld.Pertemuan2.ListActivity;
 import com.example.helloworld.Pertemuan2.RecyclerActivity;
+import com.example.helloworld.Pertemuan4.DebuggingActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -29,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
         Button btnList = (Button) findViewById(R.id.buttonListView);
         Button btnRecycler = (Button) findViewById(R.id.buttonRecylerView);
         Button btnCard = (Button) findViewById(R.id.buttonCardView);
+        Button btnPertemuan = (Button) findViewById(R.id.btnPertemuan);
 
         //Action
         txtView.setText(R.string.text_hello_world);
@@ -79,6 +81,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+
+        btnPertemuan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, DebuggingActivity.class);
+                startActivity(intent);
+            }
+        });
 
     }
     public void Tracker(View view){
