@@ -62,7 +62,7 @@ public class MahasiswaCRUDRecyclerAdapter extends RecyclerView.Adapter<Mahasiswa
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder{
-        private TextView tvNama, tvNim, tvNotelp, tvAlamat, tvEmail;
+        private TextView tvNama, tvNim, tvAlamat, tvEmail;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -71,7 +71,6 @@ public class MahasiswaCRUDRecyclerAdapter extends RecyclerView.Adapter<Mahasiswa
             tvAlamat = itemView.findViewById(R.id.tvAlamat);
             tvEmail = itemView.findViewById(R.id.tvEmail);
 
-            //tvNotelp = itemView.findViewById(R.id.tvNoTelp);
 
         }
     }

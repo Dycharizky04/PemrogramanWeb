@@ -42,24 +42,14 @@
                 app:layout_constraintTop_toBottomOf="@+id/tvNama" />
 
             <TextView
-                android:id="@+id/tvNoTelp"
-                android:layout_width="0dp"
-                android:layout_height="27dp"
-                android:layout_weight="1"
-                android:text="TextView"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tvNim" />
-
-            <TextView
                 android:id="@+id/tvAlamat"
                 android:layout_width="0dp"
                 android:layout_height="28dp"
                 android:text="TextView"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/tvNoTelp" />
+                app:layout_constraintTop_toBottomOf="@+id/tvNama" />
 
             <TextView
                 android:id="@+id/tvEmail"

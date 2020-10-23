@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Crud.MahasiswaDeleteActivity"></activity>
+        <activity android:name=".Crud.MahasiswaUpdateActivity"></activity>
+        <activity android:name=".Crud.MahasiswaDeleteActivity" />
         <activity android:name=".Crud.MahasiswaAddActivity" />
         <activity android:name=".Crud.MahasiswaGetAllActivity" />
         <activity
