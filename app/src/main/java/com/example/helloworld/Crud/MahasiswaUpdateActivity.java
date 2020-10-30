@@ -31,10 +31,10 @@ public class MahasiswaUpdateActivity extends AppCompatActivity {
         setContentView(R.layout.activity_mahasiswa_update);
 
         editTextNama = (EditText)findViewById(R.id.editTextNamaBaru);
-        editTextNim = (EditText)findViewById(R.id.editTextNimBaru);
-        editTextNimCari = (EditText)findViewById(R.id.editTextNimCari);
-        editTextAlamat = (EditText)findViewById(R.id.editTextAlamatBaru);
-        editTextEmail = (EditText)findViewById(R.id.editTextEmailBaru);
+        editTextNim = (EditText)findViewById(R.id.editTextKodeBaru);
+        editTextNimCari = (EditText)findViewById(R.id.editTextKodeCari);
+        editTextAlamat = (EditText)findViewById(R.id.editTextHariBaru);
+        editTextEmail = (EditText)findViewById(R.id.editTextSesiBaru);
         btnUbah = (Button)findViewById(R.id.buttonUbah);
         pd = new ProgressDialog(MahasiswaUpdateActivity.this);
 
@@ -58,7 +58,7 @@ public class MahasiswaUpdateActivity extends AppCompatActivity {
                         editTextNimCari.getText().toString(),
                         editTextAlamat.getText().toString(),
                         editTextEmail.getText().toString(),
-                        "Fotonya Diubah",
+                        //"Fotonya Diubah",
                         "72180194"
                 );
 

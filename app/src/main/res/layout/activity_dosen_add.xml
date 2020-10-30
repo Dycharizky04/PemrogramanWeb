@@ -2,24 +2,12 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".Crud.MahasiswaUpdateActivity">
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".Uts.DosenAddActivity">
 
     <EditText
-        android:id="@+id/editTextKodeCari"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:enabled="true"
-        android:hint="NIM yang mau di update"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/editTextNamaBaru"
+        android:id="@+id/editTextNamaDosen"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -27,32 +15,32 @@
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextKodeCari" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextKodeBaru"
+        android:id="@+id/editTextNikDosen"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="NIM"
+        android:hint="Nik"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNamaBaru" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextNamaDosen" />
 
     <EditText
-        android:id="@+id/editTextHariBaru"
+        android:id="@+id/editTextAlamatDosen"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Alamat"
+        android:hint="alamat"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextKodeBaru" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextNikDosen" />
 
     <EditText
-        android:id="@+id/editTextSesiBaru"
+        android:id="@+id/editTextEmailDosen"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -60,14 +48,31 @@
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextHariBaru" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextAlamatDosen" />
 
     <Button
-        android:id="@+id/buttonUbah"
-        android:layout_width="0dp"
+        android:id="@+id/btnSimpanTambah"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
         android:text="Simpan"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextSesiBaru" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextEmailDosen" />
+
+    <EditText
+        android:id="@+id/editTextGelarDosen"
+        android:layout_width="411dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:hint="Gelar"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btnSimpanTambah"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextEmailDosen"
+        app:layout_constraintVertical_bias="0.0" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

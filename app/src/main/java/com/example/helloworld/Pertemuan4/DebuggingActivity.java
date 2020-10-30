@@ -22,7 +22,7 @@ public class DebuggingActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_debugging);
 
-        RecyclerView rv = (RecyclerView)findViewById(R.id.rvLatihan);
+        RecyclerView rv = (RecyclerView)findViewById(R.id.cvMatkul);
         DebuggingRecyclerAdapter debuggingRecyclerAdapter;
 
         //data dummy

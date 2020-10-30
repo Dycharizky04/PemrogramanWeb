@@ -12,19 +12,32 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Crud.MahasiswaUpdateActivity"></activity>
-        <activity android:name=".Crud.MahasiswaDeleteActivity" />
-        <activity android:name=".Crud.MahasiswaAddActivity" />
-        <activity android:name=".Crud.MahasiswaGetAllActivity" />
-        <activity
-            android:name=".Crud.MainMhsActivity"
-            android:label="Menu CRUD Mahasiswa">
+        <activity android:name=".CrudMk.MatkulDeleteActivity"></activity>
+        <activity android:name=".CrudMk.MatkulUpdateActivity" />
+        <activity android:name=".CrudMk.MatkulGetAllActivity" />
+        <activity android:name=".CrudMk.MatkulMainActivity" />
+        <activity android:name=".CrudMk.MatkulAddActivity" />
+        <activity android:name=".Uts.UtsMainActivity" />
+        <activity android:name=".Uts.DosenDeleteActivity" />
+        <activity android:name=".Uts.DosenUpdateActivity" />
+        <activity android:name=".Uts.DosenAddActivity" />
+        <activity android:name=".Uts.MainDosenActivity" />
+        <activity android:name=".Uts.DosenGetAllActivity" />
+        <activity android:name=".Uts.SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Uts.PrefActivity" />
+        <activity android:name=".Crud.MahasiswaUpdateActivity" />
+        <activity android:name=".Crud.MahasiswaDeleteActivity" />
+        <activity android:name=".Crud.MahasiswaAddActivity" />
+        <activity android:name=".Crud.MahasiswaGetAllActivity" />
+        <activity
+            android:name=".Crud.MainMhsActivity"
+            android:label="Menu CRUD Mahasiswa" />
         <activity android:name=".Pertemuan2.CardActvity" />
         <activity android:name=".Pertemuan2.RecyclerActivity" />
         <activity android:name=".Pertemuan2.ListActivity" />

@@ -7,7 +7,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.os.Bundle;
 
 import com.example.helloworld.Adapter.MahasiswaCardAdapter;
-import com.example.helloworld.Adapter.MahasiswaRecyclerAdapter;
 import com.example.helloworld.Model.Mahasiswa;
 import com.example.helloworld.R;
 
@@ -21,7 +20,7 @@ public class CardActvity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_card_actvity);
 
-        RecyclerView rv = (RecyclerView)findViewById(R.id.rvLatihan);
+        RecyclerView rv = (RecyclerView)findViewById(R.id.cvMatkul);
         MahasiswaCardAdapter mahasiswaCardAdapter;
         //data dummy
         List<Mahasiswa> mahasiswaList = new ArrayList<Mahasiswa>();

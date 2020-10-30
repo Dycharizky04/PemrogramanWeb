@@ -1,4 +1,4 @@
-package com.example.helloworld.Crud;
+package com.example.helloworld.Uts;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -18,25 +18,24 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-public class MahasiswaDeleteActivity extends AppCompatActivity {
-
-        ProgressDialog pd;
+public class DosenDeleteActivity extends AppCompatActivity {
+    ProgressDialog pd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mahasiswa_delete);
+        setContentView(R.layout.activity_dosen_delete);
 
-        EditText edNim = (EditText)findViewById(R.id.editKode);
+        EditText edNik = (EditText)findViewById(R.id.editKode);
         Button btnHapus = (Button)findViewById(R.id.btnHapus);
-        pd = new ProgressDialog(MahasiswaDeleteActivity.this);
+        pd = new ProgressDialog(DosenDeleteActivity.this);
 
         btnHapus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 GetDataService service = RetrofitClientInstance.getRetrofitInstance().create(GetDataService.class);
-                Call<DefaultResult> call = service.delete_mhs(
-                        edNim.getText().toString(),
+                Call<DefaultResult> call = service.delete_dosen(
+                        edNik.getText().toString(),
                         "72180194"
                 );
 
@@ -44,13 +43,13 @@ public class MahasiswaDeleteActivity extends AppCompatActivity {
                     @Override
                     public void onResponse(Call<DefaultResult> call, Response<DefaultResult> response) {
                         pd.dismiss();
-                        Toast.makeText(MahasiswaDeleteActivity.this, "Data Berhasil Dihapus", Toast.LENGTH_LONG).show();
+                        Toast.makeText(DosenDeleteActivity.this, "Data Berhasil Dihapus", Toast.LENGTH_LONG).show();
                     }
 
                     @Override
                     public void onFailure(Call<DefaultResult> call, Throwable t) {
                         pd.dismiss();
-                        Toast.makeText(MahasiswaDeleteActivity.this, "Gagal", Toast.LENGTH_LONG).show();
+                        Toast.makeText(DosenDeleteActivity.this, "Gagal", Toast.LENGTH_LONG).show();
                     }
                 });
             }
